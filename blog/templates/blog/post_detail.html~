@@ -8,6 +8,7 @@
             </div>
         {% endif %}
         <h1>{{ post.title }}</h1>
+        <a class="button button-primary" href="{% url "post_edit" pk=post.pk %}">Edit</a>
         <p>{{ post.text|linebreaks }}</p>
     </div>
 {% endblock %}
